@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6148439325789983"
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6148439325789983"
      crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -95,10 +95,6 @@
       </p>
     </section>
 
-    <!-- Top Ad Slot Placeholder -->
-    <div class="bg-white border-2 border-dashed border-slate-300 rounded-xl py-3.5 px-4 text-center text-slate-500 text-sm">
-      <span class="font-semibold text-slate-600">[상단 광고 영역]</span> 구글 애드센스 반응형 배너 삽입 위치
-    </div>
 
     <!-- Main Draw Section -->
     <section id="draw-section" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 scroll-mt-28">
@@ -268,10 +264,6 @@
       </div>
     </section>
 
-    <!-- Bottom Ad Slot Placeholder -->
-    <div class="bg-white border-2 border-dashed border-slate-300 rounded-xl py-4 px-4 text-center text-slate-500 text-sm">
-      <span class="font-semibold text-slate-600">[하단 광고 영역]</span> 구글 애드센스 디스플레이 배너 삽입 위치
-    </div>
 
     <!-- Educational Lotto Guide Section (Prevents AdSense Thin-Content Rejection) -->
     <section id="guide-section" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 scroll-mt-28 space-y-4">
@@ -357,7 +349,7 @@
   <div id="adModal" class="fixed inset-0 z-50 bg-black/65 hidden items-center justify-center p-4">
     <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl border border-slate-200 text-center">
       <div class="inline-block bg-amber-100 text-amber-900 text-sm font-bold px-3 py-1 rounded-full mb-3">
-        광고 시청 후 번호 확인 (프로토타입 시뮬레이션)
+        무료 서비스 운영 응원 안내
       </div>
       <h3 id="adModalTitle" class="text-2xl font-extrabold text-slate-900">4·5번째 번호 한 번에 열기</h3>
       <p id="adModalDesc" class="text-base text-slate-600 mt-2">
@@ -478,9 +470,9 @@
         html: `
           <p>사이트 이용 중 불편한 점, 당첨번호 데이터 오류 제보, 제휴 및 기타 문의 사항은 아래 운영자 이메일로 연락해 주세요.</p>
           <div class="bg-slate-50 border border-slate-200 rounded-xl p-3.5 font-bold text-[#1e3a5f]">
-            운영자 이메일: jsmikecorp@gmail.com
+            운영자 이메일: jjsjjh0331@gmail.com
           </div>
-          <p class="text-xs text-slate-500">.</p>
+          
         `
       }
     };
@@ -959,11 +951,11 @@
       state.pendingAdStep = stepIdx;
       if (action === 'reset') {
         adModalTitle.textContent = '광고 보고 처음부터 다시 뽑기';
-        adModalDesc.innerHTML = '본 사이트는 <strong>완전무료</strong>로 운영됩니다. <strong>홈페이지 운영비 마련</strong>을 위해 짧은 광고 1회 시청으로 응원해 주시면 5게임을 처음부터 다시 뽑으실 수 있습니다.<br /><span class="text-sm text-slate-500">(실제 배포 시 구글 애드센스 오퍼월 보상형 광고가 표시됩니다.)</span>';
+        adModalDesc.innerHTML = '본 사이트는 <strong>완전무료</strong>로 운영됩니다. <strong>홈페이지 운영비 마련</strong>을 위해 짧은 광고 1회 시청으로 응원해 주시면 5게임을 처음부터 다시 뽑으실 수 있습니다.';
         adConfirmBtn.textContent = '처음부터 다시 시작';
       } else {
         adModalTitle.textContent = '4·5번째 번호 한 번에 열기';
-        adModalDesc.innerHTML = '본 사이트는 <strong>완전무료</strong>로 운영됩니다. <strong>홈페이지 운영비 마련</strong>을 위해 짧은 광고 1회 시청으로 응원해 주시면 4번과 5번 번호가 모두 열립니다.<br /><span class="text-sm text-slate-500">(실제 배포 시 구글 애드센스 오퍼월 보상형 광고가 표시됩니다.)</span>';
+        adModalDesc.innerHTML = '본 사이트는 <strong>완전무료</strong>로 운영됩니다. <strong>홈페이지 운영비 마련</strong>을 위해 짧은 광고 1회 시청으로 응원해 주시면 4번과 5번 번호가 모두 열립니다.';
         adConfirmBtn.textContent = '번호 추첨하기';
       }
       adConfirmBtn.disabled = true;
