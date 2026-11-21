@@ -5,12 +5,12 @@
      crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="완전무료 AI분석 로또번호 추첨기! 최근 500회차·역대 1,250회 통계로 번호를 추천하고 각 번호의 총 당첨 횟수를 확인하세요." />
-  <title>완전무료 AI분석 로또번호 추첨기 | 로또 6/45</title>
+  <meta name="description" content="완전무료 로또번호 생성기! 1회부터 최신 회차까지 동행복권 당첨 통계를 바탕으로 재미로 번호를 뽑고 번호별 역대 당첨 횟수를 확인하세요." />
+  <title>완전무료 로또번호 추첨기 | 역대 당첨 통계 기반 로또 6/45</title>
   <link rel="canonical" href="https://lottogpt.co.kr/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="완전무료 AI분석 로또번호 추첨기 | 로또 6/45" />
-  <meta property="og:description" content="최근 500회차·역대 1,250회 통계를 AI로 분석해 로또 번호를 무료 추천하고 번호별 누적 당첨 횟수를 확인하세요." />
+  <meta property="og:title" content="완전무료 로또번호 추첨기 | 역대 당첨 통계 기반 로또 6/45" />
+  <meta property="og:description" content="역대 당첨번호 통계를 바탕으로 재미로 뽑는 무료 로또번호 생성기. 번호별 역대 당첨 횟수와 최근 50회 통계도 확인하세요." />
   <meta property="og:url" content="https://lottogpt.co.kr/" />
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,20 +61,20 @@
         <div>
           <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight flex flex-wrap items-center gap-1.5">
             <span class="bg-amber-400 text-[#111827] px-2 py-0.5 rounded-md text-base sm:text-lg">완전무료</span>
-            <span class="bg-sky-400 text-[#111827] px-2 py-0.5 rounded-md text-base sm:text-lg">AI분석</span>
+            <span class="bg-sky-400 text-[#111827] px-2 py-0.5 rounded-md text-base sm:text-lg">역대통계</span>
             <span>로또번호</span>
           </h1>
-          <p class="text-xs sm:text-sm text-blue-100 mt-1">최근 500회차·역대 1,250회 통계 기반 번호 추천</p>
+          <p class="text-xs sm:text-sm text-blue-100 mt-1">역대 당첨 통계 기반 재미용 번호 생성 (<span class="js-range">1회~최신 회차</span>)</p>
         </div>
         <div class="bg-white/15 border border-white/25 rounded-xl px-3 py-1.5 text-right">
           <div class="text-[11px] text-blue-100 font-medium">다음 추첨 예정</div>
-          <div id="nextDrawBadge" class="text-sm sm:text-base font-bold">제1251회 대비</div>
+          <div id="nextDrawBadge" class="text-sm sm:text-base font-bold">제1252회 대비</div>
         </div>
       </div>
 
       <nav aria-label="주요 메뉴" class="mt-3 pt-2.5 border-t border-white/15 flex items-center gap-4 sm:gap-6 text-sm font-bold overflow-x-auto whitespace-nowrap">
         <a href="#draw-section" class="text-white hover:text-amber-300 transition">번호 추첨</a>
-        <a href="#stats-section" class="text-blue-100 hover:text-amber-300 transition">AI 통계 분석</a>
+        <a href="#stats-section" class="text-blue-100 hover:text-amber-300 transition">당첨 통계</a>
         <a href="#history-section" class="text-blue-100 hover:text-amber-300 transition">최근 당첨번호</a>
         <a href="#guide-section" class="text-blue-100 hover:text-amber-300 transition">로또 가이드</a>
       </nav>
@@ -82,21 +82,21 @@
   </header>
 
   <main class="max-w-2xl mx-auto px-4 mt-5 space-y-5">
-    <!-- Promotional AI Statistics Banner (AdSense-Safe, 3 Key Points Highlighted) -->
+    <!-- Intro Banner (3 Key Points Highlighted) -->
     <section class="bg-gradient-to-r from-[#1e3a5f] to-[#2b5282] text-white rounded-2xl p-5 shadow-sm border border-[#1e3a5f]">
       <div class="flex flex-wrap items-center gap-2 mb-2.5">
         <span class="inline-block bg-amber-400 text-[#111827] text-sm font-extrabold px-3 py-1 rounded-full">완전무료</span>
-        <span class="inline-block bg-sky-300 text-[#111827] text-sm font-extrabold px-3 py-1 rounded-full">AI분석</span>
+        <span class="inline-block bg-sky-300 text-[#111827] text-sm font-extrabold px-3 py-1 rounded-full">역대통계</span>
         <span class="inline-block bg-white text-[#1e3a5f] text-sm font-extrabold px-3 py-1 rounded-full">로또번호</span>
       </div>
       <p class="text-lg sm:text-xl font-extrabold leading-snug">
-        회원가입·결제 없는 <span class="text-amber-300">완전무료</span> <span class="text-sky-300">AI분석</span> <span class="underline decoration-amber-300 underline-offset-4">로또번호</span> 추첨기
+        회원가입·결제 없는 <span class="text-amber-300">완전무료</span> <span class="underline decoration-amber-300 underline-offset-4">로또번호</span> 추첨기 · 5게임 모두 무료
       </p>
       <p class="text-sm sm:text-base text-blue-100 mt-1.5 leading-relaxed">
-        최근 500회차 및 역대 1,250회 당첨 빅데이터를 AI 통계로 분석해 출현 빈도·홀짝 균형·합계 분포를 반영한 번호를 추출합니다.
+        동행복권 공식 당첨번호(<span class="js-range">1회~최신 회차</span>)의 번호별 출현 횟수를 가중치로 삼아 무작위로 뽑고, 홀짝·합계가 고른 조합만 보여 드리는 재미용 번호 생성기입니다.
       </p>
       <p class="text-xs text-blue-100/85 mt-2">
-        ※ 각 번호 아래에 1회~1,250회 총 누적 당첨 횟수(보너스 제외)가 함께 표시됩니다. (재미·참고용이며 당첨을 보장하지 않습니다.)
+        ※ 각 번호 아래에 <span class="js-range">1회~최신 회차</span> 총 당첨 횟수(보너스 제외)가 함께 표시됩니다. (재미·참고용이며 당첨을 보장하지 않습니다.)
       </p>
     </section>
 
@@ -126,7 +126,7 @@
           <canvas id="drumCanvas" width="260" height="200" class="max-w-full h-auto"></canvas>
         </div>
         <p id="drumStatus" class="text-base font-medium text-slate-600 mt-1 text-center">
-          아래 버튼을 누르면 AI 통계 기반 번호가 하나씩 추첨됩니다.
+          아래 버튼을 누르면 역대 통계 기반 번호가 하나씩 추첨됩니다.
         </p>
       </div>
 
@@ -151,11 +151,11 @@
         </button>
 
         <div id="adGuideBanner" class="text-sm sm:text-base font-bold text-[#1e3a5f] bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 text-center">
-          1·2·3번은 무료로 바로 뽑으실 수 있고, 짧은 광고 1회 시청 후 4·5번을 이어서 뽑으실 수 있습니다.
+          1번부터 5번까지 모두 무료로 바로 뽑으실 수 있습니다.
         </div>
 
         <div class="flex items-center justify-between gap-2 text-sm text-slate-600 bg-slate-50 rounded-xl px-4 py-2.5 border border-slate-200">
-          <span>무료: <strong>1·2·3번</strong> / 광고 1회 시청 후: <strong>4·5번 열림</strong></span>
+          <span><strong>1~5게임 모두 무료</strong> · 회원가입 없음</span>
           <button
             id="resetBtn"
             type="button"
@@ -171,7 +171,7 @@
     <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6">
       <div class="mb-4">
         <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">내 추천 로또 용지 (5게임)</h2>
-        <p class="text-sm text-slate-500 mt-0.5">각 번호 아래에 1회~1,250회 총 누적 당첨 횟수가 함께 표시됩니다.</p>
+        <p class="text-sm text-slate-500 mt-0.5">각 번호 아래에 <span class="js-range">1회~최신 회차</span> 총 당첨 횟수가 함께 표시됩니다.</p>
       </div>
 
       <!-- 5 Rows Container -->
@@ -203,12 +203,12 @@
       </p>
     </section>
 
-    <!-- AI Statistics & Cumulative Frequency Section (AdSense Value-Add Content) -->
+    <!-- Winning Number Statistics Section (computed from data/lotto.json) -->
     <section id="stats-section" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 scroll-mt-28">
       <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
         <div>
           <span class="inline-block text-xs font-extrabold text-[#1e3a5f] bg-blue-50 px-2.5 py-0.5 rounded-full mb-1">
-            AI 통계 요약 · 1회~1,250회 누적 기준
+            당첨 통계 · <span class="js-range">1회~최신 회차</span> 기준
           </span>
           <h2 class="text-xl font-extrabold text-slate-900">역대 최다·최소 출현 번호 분석</h2>
         </div>
@@ -232,18 +232,30 @@
         </div>
       </div>
 
+      <div class="mt-3.5 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+        <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4">
+          <div class="text-sm font-extrabold text-amber-900 mb-2.5">최근 50회 많이 나온 번호 6개 <span id="recentRangeText" class="font-medium text-amber-800"></span></div>
+          <div id="recentTopBalls" class="flex items-start gap-2 flex-wrap"></div>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+          <div class="text-sm font-extrabold text-slate-700 mb-2.5">최근 50회 적게 나온 번호 6개</div>
+          <div id="recentLowBalls" class="flex items-start gap-2 flex-wrap"></div>
+        </div>
+      </div>
+      <p class="mt-2 text-xs text-slate-500">※ 최근 50회 칸의 숫자는 최근 50회 동안 나온 횟수입니다. 매 회차 추첨은 독립적이라 과거 횟수가 다음 결과를 예측하지는 않습니다.</p>
+
       <div class="mt-4 bg-slate-50 border border-slate-200 rounded-xl p-4 text-sm text-slate-700 leading-relaxed space-y-1.5">
-        <div class="font-extrabold text-slate-900">AI 통계 추천은 어떻게 조합을 만드나요?</div>
+        <div class="font-extrabold text-slate-900">번호 조합은 어떻게 만들어지나요?</div>
         <p>
-          본 추첨기는 최근 500회차 흐름과 역대 1,250회 누적 출현 데이터를 바탕으로 <strong>① 번호별 출현 빈도 가중치</strong>,
-          <strong>② 역대 당첨 조합에서 가장 자주 나타나는 홀짝 균형(2:4 ~ 4:2)</strong>,
-          <strong>③ 6개 번호 합계 구간(100~175)</strong>을 함께 고려해 균형 잡힌 조합을 생성합니다.
+          본 추첨기는 동행복권 공식 당첨번호 전체(<span class="js-range">1회~최신 회차</span>)로 계산한 <strong>① 번호별 역대 출현 횟수를 가중치로 쓴 무작위 추첨</strong>에
+          <strong>② 홀짝 균형(2:4 ~ 4:2)</strong>, <strong>③ 6개 번호 합계 구간(100~175)</strong> 조건을 맞춘 조합만 보여 드립니다.
+          인공지능 예측이 아닌 단순 통계 참고용 재미 기능이며, 당첨 확률을 높여 주지 않습니다.
         </p>
       </div>
 
       <!-- Collapsible Full 1~45 Frequency Table -->
       <div id="allFreqContainer" class="hidden mt-4 border border-slate-200 rounded-xl p-4 bg-white">
-        <div class="text-sm font-extrabold text-slate-800 mb-3">1번~45번 역대 누적 당첨 횟수 (1회~1,250회, 보너스 제외)</div>
+        <div class="text-sm font-extrabold text-slate-800 mb-3">1번~45번 역대 누적 당첨 횟수 (<span class="js-range">1회~최신 회차</span>, 보너스 제외)</div>
         <div id="allFreqGrid" class="grid grid-cols-5 sm:grid-cols-9 gap-2 text-center"></div>
       </div>
     </section>
@@ -252,16 +264,9 @@
     <section id="history-section" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 sm:p-6 scroll-mt-28">
       <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
         <div>
-          <h2 class="text-xl font-extrabold text-slate-900">최근 당첨번호 기록</h2>
-          <p class="text-sm text-slate-500 mt-0.5">뽑힌 번호는 아래 기록과 자동으로 대조해 드립니다.</p>
+          <h2 class="text-xl font-extrabold text-slate-900">최근 당첨번호 기록 (최근 10회)</h2>
+          <p class="text-sm text-slate-500 mt-0.5">뽑힌 번호는 1회부터 최신 회차까지 역대 당첨번호 전체와 자동으로 대조해 드립니다.</p>
         </div>
-        <button
-          id="openDbModalBtn"
-          type="button"
-          class="text-sm font-bold text-[#1e3a5f] bg-blue-50 hover:bg-blue-100 border border-blue-200 px-3 py-2 rounded-lg cursor-pointer"
-        >
-          JSON DB 확인·테스트
-        </button>
       </div>
 
       <div id="historyList" class="space-y-3">
@@ -346,66 +351,9 @@
         본 사이트는 매주 재미로 로또 번호를 추측해 보기 위해 제작된 무료 통계·오락 도구이며, 당첨을 보장하지 않습니다.
         실제 복권 구매 및 공식 당첨 확인은 동행복권 공식 홈페이지(dhlottery.co.kr)를 이용해 주세요.
       </p>
-      <p class="text-xs text-slate-400">© 2026 완전무료 AI분석 로또번호. All rights reserved.</p>
+      <p class="text-xs text-slate-400">© 2026 완전무료 로또번호 추첨기 (lottogpt.co.kr). All rights reserved.</p>
     </footer>
   </main>
-
-  <!-- Simulated Rewarded Ad Modal (Unlocks 4th & 5th Draws Together) -->
-  <div id="adModal" class="fixed inset-0 z-50 bg-black/65 hidden items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl border border-slate-200 text-center">
-      <div class="inline-block bg-amber-100 text-amber-900 text-sm font-bold px-3 py-1 rounded-full mb-3">
-        무료 서비스 운영 응원 안내
-      </div>
-      <h3 id="adModalTitle" class="text-2xl font-extrabold text-slate-900">4·5번째 번호 한 번에 열기</h3>
-      <p id="adModalDesc" class="text-base text-slate-600 mt-2">
-        짧은 광고를 1회 보시면 <strong>4번과 5번 번호</strong>를 모두 이어서 뽑으실 수 있습니다.<br />
-        <span class="text-sm text-slate-500">(실제 배포 시 구글 애드센스 오퍼월 또는 전면 광고가 표시됩니다.)</span>
-      </p>
-
-      <div class="my-5 bg-slate-100 border border-slate-300 rounded-xl py-8 px-4">
-        <div class="text-sm font-semibold text-slate-500 mb-1">샘플 광고 화면</div>
-        <div id="adCountdownText" class="text-3xl font-extrabold text-[#1e3a5f]">3초 남음</div>
-      </div>
-
-      <div class="flex gap-2">
-        <button
-          id="adCancelBtn"
-          type="button"
-          class="flex-1 py-3.5 rounded-xl text-base font-bold bg-slate-200 text-slate-700 hover:bg-slate-300 cursor-pointer"
-        >
-          닫기
-        </button>
-        <button
-          id="adConfirmBtn"
-          type="button"
-          disabled
-          class="flex-1 py-3.5 rounded-xl text-base font-extrabold bg-[#1e3a5f] text-white disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed"
-        >
-          번호 추첨하기
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- JSON DB Inspection / Upload Modal -->
-  <div id="dbModal" class="fixed inset-0 z-50 bg-black/65 hidden items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-xl border border-slate-200">
-      <div class="flex items-center justify-between mb-3">
-        <h3 class="text-xl font-extrabold text-slate-900">당첨번호 JSON 데이터베이스</h3>
-        <button id="closeDbModalBtn" type="button" class="text-slate-500 hover:text-slate-900 text-2xl font-bold px-2 cursor-pointer">&times;</button>
-      </div>
-      <p class="text-sm text-slate-600 mb-3">
-        GitHub Actions로 매주 자동 업데이트되는 <code>data/lotto.json</code> 형식입니다. 직접 수정한 JSON 파일을 올려 바로 테스트해 볼 수 있습니다.
-      </p>
-      <div class="mb-3">
-        <label class="block w-full text-center py-2.5 px-4 bg-blue-50 border border-blue-200 text-[#1e3a5f] font-bold rounded-xl cursor-pointer hover:bg-blue-100">
-          JSON 파일 불러오기 (.json)
-          <input id="jsonFileInput" type="file" accept=".json,application/json" class="hidden" />
-        </label>
-      </div>
-      <pre id="jsonPreview" class="bg-slate-900 text-slate-100 text-xs p-3.5 rounded-xl overflow-x-auto max-h-60"></pre>
-    </div>
-  </div>
 
   <!-- AdSense Policy / Legal Modal -->
   <div id="policyModal" class="fixed inset-0 z-50 bg-black/65 hidden items-center justify-center p-4">
@@ -424,28 +372,19 @@
   </div>
 
   <script>
-    // Verified recent Korean Lotto 6/45 draws (Nov 2026)
+    // 오프라인 대비 최소 기본값 (실제 데이터는 data/lotto.json 에서 불러옴)
     const DEFAULT_HISTORY = [
-      { round: 1250, date: '2026-11-14', numbers: [1, 5, 18, 23, 27, 28], bonus: 8, winners: 9, prize: '약 31억 316만 원' },
-      { round: 1249, date: '2026-11-07', numbers: [2, 11, 16, 25, 34, 35], bonus: 14, winners: 14, prize: '약 20억 2,504만 원' },
-      { round: 1248, date: '2026-10-31', numbers: [16, 18, 27, 36, 38, 42], bonus: 22, winners: 15, prize: '약 19억 3,366만 원' },
-      { round: 1247, date: '2026-10-24', numbers: [8, 14, 21, 22, 42, 45], bonus: 24, winners: 8, prize: '약 36억 4,000만 원' }
+      { round: 1251, date: '2026-11-21', numbers: [14, 18, 19, 29, 40, 45], bonus: 1, winners: 14, prize: '약 20억 6,884만 원' }
     ];
+    const RECENT_N = 50;
+    const HISTORY_SHOW = 10;
 
-    // Verified cumulative main draw counts (1~1250회, 보너스 제외, signalfire85.tistory.com/40 기준)
-    const DEFAULT_TOTAL_FREQ = {
-      1: 172, 2: 158, 3: 172, 4: 164, 5: 155, 6: 166, 7: 171, 8: 159, 9: 137, 10: 163,
-      11: 169, 12: 180, 13: 184, 14: 173, 15: 170, 16: 173, 17: 171, 18: 182, 19: 171, 20: 172,
-      21: 168, 22: 148, 23: 151, 24: 169, 25: 155, 26: 166, 27: 184, 28: 160, 29: 156, 30: 158,
-      31: 171, 32: 147, 33: 175, 34: 188, 35: 164, 36: 166, 37: 174, 38: 155, 39: 168, 40: 174,
-      41: 151, 42: 161, 43: 167, 44: 166, 45: 176
-    };
 
     const POLICY_CONTENT = {
       about: {
         title: '사이트 소개',
         html: `
-          <p><strong>AI 통계 로또 6/45 추첨기</strong>는 매주 재미로 로또 번호를 선택해 보려는 분들을 위해 제작된 무료 웹 서비스입니다.</p>
+          <p><strong>완전무료 로또번호 추첨기(로또 6/45)</strong>는 매주 재미로 로또 번호를 선택해 보려는 분들을 위해 제작된 무료 웹 서비스입니다.</p>
           <p>특히 40~60대 사용자분들도 눈이 편하고 빠르게 이용하실 수 있도록 큰 글씨, 높은 대비, 직관적인 5게임 용지 구조를 적용했습니다.</p>
           <p><strong>데이터 출처 및 분석 방식:</strong> 동행복권 공식 발표 당첨번호(1회~최신 회차)를 기반으로 번호별 총 누적 출현 횟수와 홀짝·합계 분포를 참고용으로 제공합니다.</p>
         `
@@ -465,7 +404,7 @@
       terms: {
         title: '이용약관 및 면책 조항',
         html: `
-          <p><strong>1. 서비스 성격:</strong> 본 사이트에서 제공하는 번호 추첨 및 AI 통계 분석 결과는 순수한 오락 및 참고 목적으로 제공되며, 실제 복권 당첨을 보장하거나 예측하지 않습니다.</p>
+          <p><strong>1. 서비스 성격:</strong> 본 사이트에서 제공하는 번호 추첨 및 당첨 통계 정보는 순수한 오락 및 참고 목적으로 제공되며, 실제 복권 당첨을 보장하거나 예측하지 않습니다.</p>
           <p><strong>2. 책임의 한계:</strong> 본 사이트의 번호를 참고하여 복권을 구매한 결과에 대한 모든 판단과 책임은 이용자 본인에게 있습니다.</p>
           <p><strong>3. 공식 확인 안내:</strong> 정확한 당첨번호, 당첨금, 수령 절차는 반드시 동행복권 공식 홈페이지(dhlottery.co.kr)를 통해 확인하시기 바랍니다.</p>
         `
@@ -475,7 +414,7 @@
         html: `
           <p>사이트 이용 중 불편한 점, 당첨번호 데이터 오류 제보, 제휴 및 기타 문의 사항은 아래 운영자 이메일로 연락해 주세요.</p>
           <div class="bg-slate-50 border border-slate-200 rounded-xl p-3.5 font-bold text-[#1e3a5f]">
-            운영자 이메일: admin@yourdomain.com
+            운영자 이메일: <a href="mailto:jsmikecorp@gmail.com" class="underline">jsmikecorp@gmail.com</a>
           </div>
           
         `
@@ -483,19 +422,15 @@
     };
 
     const ROW_LABELS = ['A', 'B', 'C', 'D', 'E'];
-    const AD_STEPS = new Set([3, 4]); // 4th & 5th unlocked together after 1 ad
 
     const state = {
       history: [...DEFAULT_HISTORY],
-      totalFreq: { ...DEFAULT_TOTAL_FREQ },
+      totalFreq: {},
+      dataLoaded: false,
       games: [null, null, null, null, null],
       currentStep: 0,
       instantMode: false,
-      isDrawing: false,
-      bonusUnlocked: false,
-      pendingAdAction: null,
-      pendingAdStep: null,
-      adTimerId: null
+      isDrawing: false
     };
 
     // DOM Elements
@@ -521,17 +456,9 @@
     const toggleAllFreqBtn = document.getElementById('toggleAllFreqBtn');
     const allFreqContainer = document.getElementById('allFreqContainer');
     const allFreqGrid = document.getElementById('allFreqGrid');
-    const adModal = document.getElementById('adModal');
-    const adModalTitle = document.getElementById('adModalTitle');
-    const adModalDesc = document.getElementById('adModalDesc');
-    const adCountdownText = document.getElementById('adCountdownText');
-    const adCancelBtn = document.getElementById('adCancelBtn');
-    const adConfirmBtn = document.getElementById('adConfirmBtn');
-    const dbModal = document.getElementById('dbModal');
-    const openDbModalBtn = document.getElementById('openDbModalBtn');
-    const closeDbModalBtn = document.getElementById('closeDbModalBtn');
-    const jsonFileInput = document.getElementById('jsonFileInput');
-    const jsonPreview = document.getElementById('jsonPreview');
+    const recentTopBalls = document.getElementById('recentTopBalls');
+    const recentLowBalls = document.getElementById('recentLowBalls');
+    const recentRangeText = document.getElementById('recentRangeText');
     const policyModal = document.getElementById('policyModal');
     const policyModalTitle = document.getElementById('policyModalTitle');
     const policyModalBody = document.getElementById('policyModalBody');
@@ -559,16 +486,34 @@
       return state.totalFreq[n] || 0;
     }
 
+    // 번호별 누적 횟수는 항상 당첨번호 기록(history)에서 직접 계산
+    function computeFreq(draws) {
+      const freq = {};
+      for (let n = 1; n <= 45; n++) freq[n] = 0;
+      draws.forEach(d => d.numbers.forEach(n => { freq[n] += 1; }));
+      return freq;
+    }
+
+    function setHistory(draws) {
+      state.history = [...draws].sort((a, b) => b.round - a.round);
+      state.totalFreq = computeFreq(state.history);
+      state.games = state.games.map(g => g ? analyzeNumbers(g.numbers) : null);
+    }
+
+    function getLatestRound() {
+      return state.history.length ? state.history[0].round : 0;
+    }
+
     function createBallHTML(n, sizeClass = 'w-11 h-11 text-lg', animate = false) {
       return `<span class="lotto-ball ${getBallClass(n)} ${sizeClass} ${animate ? 'animate-pop' : ''}">${n}</span>`;
     }
 
     function createBallWithCountHTML(n, sizeClass = 'w-10 h-10 text-base sm:text-lg', animate = false) {
-      const count = getFreq(n);
+      const count = state.dataLoaded ? `${getFreq(n)}회` : '-';
       return `
         <div class="inline-flex flex-col items-center ${animate ? 'animate-pop' : ''}">
           <span class="lotto-ball ${getBallClass(n)} ${sizeClass}">${n}</span>
-          <span class="mt-1 text-[11px] sm:text-xs font-bold text-slate-600 leading-none">${count}회</span>
+          <span class="mt-1 text-[11px] sm:text-xs font-bold text-slate-600 leading-none">${count}</span>
         </div>
       `;
     }
@@ -585,9 +530,9 @@
       }, 3200);
     }
 
-    // AI Statistics-Weighted Draw (uses cumulative frequency weights + balanced odd/even & sum range)
-    function generateAIWeightedNumbers() {
-      for (let attempt = 0; attempt < 30; attempt++) {
+    // 역대 출현 횟수 가중 무작위 추첨 + 홀짝(2~4개)·합계(100~175) 조건
+    function generateWeightedNumbers() {
+      for (let attempt = 0; attempt < 300; attempt++) {
         const pool = Array.from({ length: 45 }, (_, i) => i + 1);
         const picked = [];
         while (picked.length < 6) {
@@ -726,8 +671,7 @@
     }
 
     function getNextRoundNumber() {
-      if (!state.history.length) return 1251;
-      return Math.max(...state.history.map(h => h.round)) + 1;
+      return getLatestRound() + 1;
     }
 
     function renderStatsSummary() {
@@ -746,12 +690,28 @@
         .map(e => createBallWithCountHTML(e.num, 'w-10 h-10 text-base'))
         .join('');
 
+      const recentDraws = state.history.slice(0, RECENT_N);
+      const recentFreq = computeFreq(recentDraws);
+      const recentEntries = Object.entries(recentFreq).map(([num, count]) => ({ num: Number(num), count }));
+      const ballWithRecent = (e) => `
+          <div class="inline-flex flex-col items-center">
+            ${createBallHTML(e.num, 'w-10 h-10 text-base')}
+            <span class="mt-1 text-[11px] sm:text-xs font-bold text-slate-600 leading-none">${state.dataLoaded ? e.count + '회' : '-'}</span>
+          </div>`;
+      recentTopBalls.innerHTML = [...recentEntries].sort((a, b) => b.count - a.count || a.num - b.num).slice(0, 6).map(ballWithRecent).join('');
+      recentLowBalls.innerHTML = [...recentEntries].sort((a, b) => a.count - b.count || a.num - b.num).slice(0, 6).map(ballWithRecent).join('');
+      if (recentDraws.length) {
+        recentRangeText.textContent = `(${recentDraws[recentDraws.length - 1].round}~${recentDraws[0].round}회)`;
+      }
+      const rangeLabel = state.dataLoaded ? `1회~${getLatestRound().toLocaleString('ko-KR')}회` : '1회~최신 회차';
+      document.querySelectorAll('.js-range').forEach(el => { el.textContent = rangeLabel; });
+
       allFreqGrid.innerHTML = entries
         .sort((a, b) => a.num - b.num)
         .map(e => `
           <div class="border border-slate-200 rounded-lg py-1.5 px-1 bg-slate-50 flex flex-col items-center">
             ${createBallHTML(e.num, 'w-7 h-7 text-xs')}
-            <span class="mt-1 text-[11px] font-bold text-slate-700">${e.count}회</span>
+            <span class="mt-1 text-[11px] font-bold text-slate-700">${state.dataLoaded ? e.count + '회' : '-'}</span>
           </div>
         `).join('');
     }
@@ -777,29 +737,16 @@
 
       drawBtn.disabled = state.isDrawing;
       if (state.currentStep >= 5) {
-        drawBtn.innerHTML = '<span>5게임 완료! 광고 보고 처음부터 다시 뽑기</span><span class="block text-xs sm:text-sm font-medium text-emerald-100 mt-1">홈페이지 운영비 마련을 위해 짧은 광고 시청 후 새 5게임이 시작됩니다</span>';
+        drawBtn.textContent = '5게임 완료! 처음부터 다시 뽑기';
         drawBtn.className = 'w-full py-4 px-5 rounded-xl text-xl sm:text-2xl font-extrabold text-white bg-emerald-700 hover:bg-emerald-800 active:scale-[0.99] transition shadow-sm cursor-pointer';
         adGuideBanner.textContent = '5게임 추첨이 모두 끝났습니다! 아래 버튼으로 이미지를 저장하거나 카톡으로 공유해 보세요.';
         adGuideBanner.className = 'text-sm sm:text-base font-bold text-emerald-900 bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-3 text-center';
       } else {
         const stepNum = state.currentStep + 1;
-        const needsAd = AD_STEPS.has(state.currentStep) && !state.bonusUnlocked;
-        if (needsAd) {
-          drawBtn.innerHTML = '<span>광고 보고 4·5번째 번호 열기</span><span class="block text-xs sm:text-sm font-bold text-slate-800 mt-1">완전무료 홈페이지 운영비 마련을 위해 짧은 광고 1회 시청으로 응원해 주세요</span>';
-          drawBtn.className = 'w-full py-3.5 px-5 rounded-xl text-xl sm:text-2xl font-extrabold text-[#111827] bg-amber-400 hover:bg-amber-500 active:scale-[0.99] transition shadow-sm cursor-pointer disabled:opacity-60 leading-tight';
-          adGuideBanner.textContent = '1~3번 무료 추첨 완료! 완전무료 사이트 운영을 위해 짧은 광고를 1회 보시면 4·5번 번호가 모두 열립니다.';
-          adGuideBanner.className = 'text-sm sm:text-base font-bold text-amber-900 bg-amber-50 border border-amber-300 rounded-xl px-4 py-3 text-center';
-        } else if (AD_STEPS.has(state.currentStep) && state.bonusUnlocked) {
-          drawBtn.textContent = `${stepNum}번째 번호 뽑기 (광고 해금 완료)`;
-          drawBtn.className = 'w-full py-4 px-5 rounded-xl text-xl sm:text-2xl font-extrabold text-white bg-[#1e3a5f] hover:bg-[#162c49] active:scale-[0.99] transition shadow-sm cursor-pointer disabled:opacity-60';
-          adGuideBanner.textContent = '광고 시청 완료! 이제 마지막 5번째 번호까지 바로 뽑으실 수 있습니다.';
-          adGuideBanner.className = 'text-sm sm:text-base font-bold text-emerald-900 bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-3 text-center';
-        } else {
-          drawBtn.textContent = `${stepNum}번째 번호 뽑기 (무료)`;
-          drawBtn.className = 'w-full py-4 px-5 rounded-xl text-xl sm:text-2xl font-extrabold text-white bg-[#1e3a5f] hover:bg-[#162c49] active:scale-[0.99] transition shadow-sm cursor-pointer disabled:opacity-60';
-          adGuideBanner.textContent = '1·2·3번은 무료로 바로 뽑으실 수 있고, 짧은 광고 1회 시청 후 4·5번을 이어서 뽑으실 수 있습니다.';
-          adGuideBanner.className = 'text-sm sm:text-base font-bold text-[#1e3a5f] bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 text-center';
-        }
+        drawBtn.textContent = `${stepNum}번째 번호 뽑기 (무료)`;
+        drawBtn.className = 'w-full py-4 px-5 rounded-xl text-xl sm:text-2xl font-extrabold text-white bg-[#1e3a5f] hover:bg-[#162c49] active:scale-[0.99] transition shadow-sm cursor-pointer disabled:opacity-60';
+        adGuideBanner.textContent = '1번부터 5번까지 모두 무료로 바로 뽑으실 수 있습니다.';
+        adGuideBanner.className = 'text-sm sm:text-base font-bold text-[#1e3a5f] bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 text-center';
       }
 
       resetBtn.classList.toggle('hidden', completedCount === 0);
@@ -814,14 +761,11 @@
     function renderSlip() {
       slipRows.innerHTML = state.games.map((game, idx) => {
         const label = ROW_LABELS[idx];
-        const isAdStep = AD_STEPS.has(idx);
-        const badgeText = isAdStep ? '광고 해금' : '무료';
-        const badgeClass = isAdStep ? 'bg-amber-100 text-amber-900' : 'bg-slate-100 text-slate-600';
+        const badgeText = '무료';
+        const badgeClass = 'bg-slate-100 text-slate-600';
 
         if (!game) {
-          const waitText = isAdStep && !state.bonusUnlocked
-            ? '광고 1회 시청 후 4·5번 함께 열림'
-            : (idx === state.currentStep ? '다음 추첨 대기 중' : (isAdStep && state.bonusUnlocked ? '해금 완료 · 바로 추첨 가능' : '무료 추첨 대기 중'));
+          const waitText = idx === state.currentStep ? '다음 추첨 대기 중' : '무료 추첨 대기 중';
           return `
             <div class="px-4 py-3.5 flex items-center justify-between gap-3 bg-slate-50/60">
               <div class="flex items-center gap-2.5">
@@ -834,9 +778,11 @@
         }
 
         const ballsHtml = game.numbers.map(n => createBallWithCountHTML(n, 'w-9 h-9 sm:w-10 sm:h-10 text-base sm:text-lg')).join('');
-        const matchNote = game.bestMatchCount >= 3
-          ? `최근 ${game.bestMatchRound}회와 ${game.bestMatchCount}개 일치`
-          : `최근 기록 3개 이상 중복 없음`;
+        const matchNote = game.bestMatchCount === 6
+          ? `역대 제${game.bestMatchRound}회 1등 번호와 같음`
+          : (game.bestMatchCount >= 3
+            ? `역대 최대 ${game.bestMatchCount}개 일치 (제${game.bestMatchRound}회)`
+            : `역대 당첨번호와 3개 이상 겹친 적 없음`);
 
         return `
           <div class="px-3.5 sm:px-4 py-3.5 bg-white">
@@ -850,7 +796,7 @@
               </div>
             </div>
             <div class="mt-2.5 pl-10 text-xs sm:text-sm text-slate-500 flex flex-wrap gap-x-3 gap-y-0.5">
-              <span>AI 통계 균형</span>
+              <span>통계 균형</span>
               <span>홀 ${game.oddCount} · 짝 ${game.evenCount}</span>
               <span>합계 ${game.sum}</span>
               <span class="text-[#1e3a5f] font-medium">${matchNote}</span>
@@ -861,7 +807,7 @@
     }
 
     function renderHistory() {
-      historyList.innerHTML = state.history.map(item => {
+      historyList.innerHTML = state.history.slice(0, HISTORY_SHOW).map(item => {
         const balls = item.numbers.map(n => createBallHTML(n, 'w-9 h-9 text-base')).join('');
         const bonusBall = createBallHTML(item.bonus, 'w-9 h-9 text-base');
         return `
@@ -882,7 +828,7 @@
     }
 
     function runDrawForStep(stepIdx) {
-      const nums = generateAIWeightedNumbers();
+      const nums = generateWeightedNumbers();
       const analyzed = analyzeNumbers(nums);
       const label = ROW_LABELS[stepIdx];
 
@@ -891,28 +837,12 @@
         currentBallsRow.innerHTML = nums.map(n => createBallWithCountHTML(n, 'w-12 h-12 text-xl', true)).join('');
         state.games[stepIdx] = analyzed;
         state.currentStep = stepIdx + 1;
-    
-    // Load latest lotto.json (history + totalFreq) automatically when deployed on Netlify/GitHub
-    fetch('./data/lotto.json?v=' + Date.now())
-      .then(r => r.ok ? r.json() : null)
-      .then(data => {
-        if (Array.isArray(data) && data.length && Array.isArray(data[0].numbers)) {
-          state.history = data;
-          renderAll();
-        } else if (data && Array.isArray(data.history)) {
-          state.history = data.history;
-          if (data.totalFreq) state.totalFreq = data.totalFreq;
-          renderAll();
-        }
-      })
-      .catch(() => {});
-
-    renderAll();
+        renderAll();
         return;
       }
 
       state.isDrawing = true;
-      drumStatus.textContent = `${stepIdx + 1}번째 (${label}줄) AI 통계 번호를 뽑고 있습니다...`;
+      drumStatus.textContent = `${stepIdx + 1}번째 (${label}줄) 번호를 뽑고 있습니다...`;
       currentDrawLabel.textContent = `${stepIdx + 1}번째 (${label}줄) 추첨 중`;
       currentBallsRow.innerHTML = '';
       renderAll();
@@ -942,58 +872,13 @@
     function performReset() {
       state.games = [null, null, null, null, null];
       state.currentStep = 0;
-      state.bonusUnlocked = false;
       currentDrawLabel.textContent = '이번에 뽑힌 번호 (아래 숫자: 역대 총 당첨 횟수)';
       currentBallsRow.innerHTML = '<span class="text-base text-slate-400 font-medium self-center">아직 추첨 전입니다</span>';
-      drumStatus.textContent = '아래 버튼을 누르면 AI 통계 기반 번호가 하나씩 추첨됩니다.';
+      drumStatus.textContent = '아래 버튼을 누르면 역대 통계 기반 번호가 하나씩 추첨됩니다.';
       renderAll();
-      showToast('광고 시청 완료! 처음 상태로 초기화되었습니다.');
+      showToast('처음 상태로 초기화되었습니다.');
     }
 
-    // Rewarded Ad Simulation Modal (supports 'unlock' for 4th/5th or 'reset' for restart)
-    function openAdModal(action, stepIdx = null) {
-      state.pendingAdAction = action;
-      state.pendingAdStep = stepIdx;
-      if (action === 'reset') {
-        adModalTitle.textContent = '광고 보고 처음부터 다시 뽑기';
-        adModalDesc.innerHTML = '본 사이트는 <strong>완전무료</strong>로 운영됩니다. <strong>홈페이지 운영비 마련</strong>을 위해 짧은 광고 1회 시청으로 응원해 주시면 5게임을 처음부터 다시 뽑으실 수 있습니다.';
-        adConfirmBtn.textContent = '처음부터 다시 시작';
-      } else {
-        adModalTitle.textContent = '4·5번째 번호 한 번에 열기';
-        adModalDesc.innerHTML = '본 사이트는 <strong>완전무료</strong>로 운영됩니다. <strong>홈페이지 운영비 마련</strong>을 위해 짧은 광고 1회 시청으로 응원해 주시면 4번과 5번 번호가 모두 열립니다.';
-        adConfirmBtn.textContent = '번호 추첨하기';
-      }
-      adConfirmBtn.disabled = true;
-      adModal.classList.remove('hidden');
-      adModal.classList.add('flex');
-
-      let remaining = 3;
-      adCountdownText.textContent = `${remaining}초 남음`;
-      if (state.adTimerId) clearInterval(state.adTimerId);
-
-      state.adTimerId = setInterval(() => {
-        remaining -= 1;
-        if (remaining > 0) {
-          adCountdownText.textContent = `${remaining}초 남음`;
-        } else {
-          clearInterval(state.adTimerId);
-          state.adTimerId = null;
-          adCountdownText.textContent = '시청 완료!';
-          adConfirmBtn.disabled = false;
-        }
-      }, 1000);
-    }
-
-    function closeAdModal() {
-      if (state.adTimerId) {
-        clearInterval(state.adTimerId);
-        state.adTimerId = null;
-      }
-      state.pendingAdAction = null;
-      state.pendingAdStep = null;
-      adModal.classList.add('hidden');
-      adModal.classList.remove('flex');
-    }
 
     // Offscreen Canvas Image Generator (Crisp 2x PNG with cumulative counts under each ball)
     function generateSlipPngBlob() {
@@ -1017,7 +902,7 @@
         c.fillStyle = '#ffffff';
         c.font = 'bold 34px "Noto Sans KR", sans-serif';
         c.textAlign = 'center';
-        c.fillText('완전무료 AI분석 로또번호 용지', width / 2, 56);
+        c.fillText('완전무료 로또번호 용지 · 역대 통계 기반', width / 2, 56);
 
         c.fillStyle = '#dbeafe';
         c.font = '500 19px "Noto Sans KR", sans-serif';
@@ -1086,7 +971,7 @@
         c.font = '500 18px "Noto Sans KR", sans-serif';
         c.textAlign = 'center';
         c.textBaseline = 'alphabetic';
-        c.fillText('최근 500회차·역대 1,250회 통계 참고용이며 당첨을 보장하지 않습니다.', width / 2, 795);
+        c.fillText(`1회~${getLatestRound().toLocaleString('ko-KR')}회 당첨 통계 기반 재미용 번호이며 당첨을 보장하지 않습니다.`, width / 2, 795);
         c.fillStyle = '#94a3b8';
         c.font = '500 16px "Noto Sans KR", sans-serif';
         c.fillText('실제 구매 및 당첨 확인: 동행복권 (dhlottery.co.kr)', width / 2, 830);
@@ -1119,37 +1004,18 @@
       if (state.isDrawing) return;
 
       if (state.currentStep >= 5) {
-        openAdModal('reset');
+        performReset();
         return;
       }
 
-      const stepIdx = state.currentStep;
-      if (AD_STEPS.has(stepIdx) && !state.bonusUnlocked) {
-        openAdModal('unlock', stepIdx);
-      } else {
-        runDrawForStep(stepIdx);
-      }
+      runDrawForStep(state.currentStep);
     });
 
     resetBtn.addEventListener('click', () => {
       if (state.isDrawing) return;
-      openAdModal('reset');
+      performReset();
     });
 
-    adCancelBtn.addEventListener('click', closeAdModal);
-
-    adConfirmBtn.addEventListener('click', () => {
-      const action = state.pendingAdAction;
-      const targetStep = state.pendingAdStep;
-      closeAdModal();
-      if (action === 'reset') {
-        performReset();
-      } else if (action === 'unlock' && targetStep !== null) {
-        state.bonusUnlocked = true;
-        showToast('광고 시청 완료! 4번·5번 번호가 모두 열렸습니다.');
-        runDrawForStep(targetStep);
-      }
-    });
 
     saveImgBtn.addEventListener('click', async () => {
       const blob = await generateSlipPngBlob();
@@ -1168,8 +1034,8 @@
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
         try {
           await navigator.share({
-            title: `제${getNextRoundNumber()}회 AI 통계 로또 추천 번호`,
-            text: '최근 500회차·역대 통계 기반 로또 번호 용지입니다!',
+            title: `제${getNextRoundNumber()}회 로또번호 (역대 통계 기반 재미용)`,
+            text: '역대 당첨 통계 기반으로 재미로 뽑은 로또번호 용지입니다! lottogpt.co.kr',
             files: [file]
           });
           showToast('공유 창이 열렸습니다.');
@@ -1189,44 +1055,6 @@
       toggleAllFreqBtn.textContent = isHidden ? '전체 횟수 접기' : '1~45번 전체 횟수 보기';
     });
 
-    // JSON DB Modal Listeners
-    openDbModalBtn.addEventListener('click', () => {
-      jsonPreview.textContent = JSON.stringify({ history: state.history, totalFreq: state.totalFreq }, null, 2);
-      dbModal.classList.remove('hidden');
-      dbModal.classList.add('flex');
-    });
-
-    closeDbModalBtn.addEventListener('click', () => {
-      dbModal.classList.add('hidden');
-      dbModal.classList.remove('flex');
-    });
-
-    jsonFileInput.addEventListener('change', (e) => {
-      const file = e.target.files && e.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = () => {
-        try {
-          const parsed = JSON.parse(String(reader.result));
-          if (Array.isArray(parsed) && parsed.length && Array.isArray(parsed[0].numbers)) {
-            state.history = parsed;
-          } else if (parsed && Array.isArray(parsed.history)) {
-            state.history = parsed.history;
-            if (parsed.totalFreq) state.totalFreq = parsed.totalFreq;
-          } else {
-            showToast('올바른 로또 JSON 형식이 아닙니다.');
-            return;
-          }
-          jsonPreview.textContent = JSON.stringify({ history: state.history, totalFreq: state.totalFreq }, null, 2);
-          state.games = state.games.map(g => g ? analyzeNumbers(g.numbers) : null);
-          renderAll();
-          showToast('당첨번호 JSON 데이터가 반영되었습니다!');
-        } catch (_) {
-          showToast('JSON 파일을 읽는 중 오류가 발생했습니다.');
-        }
-      };
-      reader.readAsText(file);
-    });
 
     // Policy Modal Listeners
     document.querySelectorAll('.policy-link').forEach((btn) => {
@@ -1254,8 +1082,22 @@
       }
     } catch (_) {}
 
+    setHistory(DEFAULT_HISTORY);
     renderAll();
     renderDrum();
+
+    // 페이지 열릴 때 최신 당첨번호 전체(data/lotto.json)를 불러와 통계를 계산
+    fetch('./data/lotto.json?v=' + Date.now())
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        const draws = Array.isArray(data) ? data : (data && data.history);
+        if (Array.isArray(draws) && draws.length && Array.isArray(draws[0].numbers)) {
+          setHistory(draws);
+          state.dataLoaded = true;
+          renderAll();
+        }
+      })
+      .catch(() => {});
   </script>
 </body>
 </html>
